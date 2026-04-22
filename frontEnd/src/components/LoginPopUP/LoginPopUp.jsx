@@ -27,7 +27,7 @@ const LoginPopUp = ({setShowLogin}) => {
     // },[data])
     const onLogin = async(event)=>{
         event.preventDefault()
-        let newUrl = url;
+        let newUrl = "https://my-resturant-website.onrender.com";
         if (currState==='login') {
             newUrl += "/api/user/login"
         }else{
