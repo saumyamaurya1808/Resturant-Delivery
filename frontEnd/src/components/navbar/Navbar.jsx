@@ -6,14 +6,9 @@ import { StoreContext } from '../../Context/StoreContext'
 
 const Navbar = ({setShowLogin}) => {
   const[menu, setMenu] = useState("home");
-  const{getTotalCartAmount,token,setToken} = useContext(StoreContext);
+  const{getTotalCartAmount,token,logout} = useContext(StoreContext);
 
   const navigate = useNavigate()
-  const logout =()=>{
-    localStorage.removeItem("token");
-    setToken("");
-    navigate("/")
-  }
   return (
     <div className='navbar'>
       <img src={assets.logo1} alt="" className='logo' style={{height:'100px', width:'100px'}} />
@@ -37,7 +32,7 @@ const Navbar = ({setShowLogin}) => {
           <ul className='nav-profile-dropdown'>
             <li><Link to='/myorders'><img src={assets.bag_icon} alt="" style={{height:'20px', width:'20px'}} /><p>Orders</p></Link> </li>
             <hr />
-            <li onClick={logout}><img src={assets.logout_icon} alt="" style={{height:'25px', width:'25px'}} /><p>Logout</p></li>
+            <li onClick={() => { logout(); navigate("/") }}><img src={assets.logout_icon} alt="" style={{height:'25px', width:'25px'}} /><p>Logout</p></li>
             
           </ul>
           </div>}

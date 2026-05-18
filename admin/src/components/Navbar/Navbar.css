@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,4 +19,107 @@
     color: #333;
     font-size: 24px;
     font-weight: 600;
+} */
+
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.75);
+    /* backdrop-filter: blur(14px); */
+
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+    transition: all 0.3s ease;
+}
+
+/* Logo */
+.logo1{
+    height: 90px !important;
+    width: 90px !important;
+    object-fit: contain;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.logo1:hover{
+    transform: scale(1.08) rotate(-2deg);
+}
+
+/* Profile */
+.profile{
+    height: 65px !important;
+    width: 65px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+
+    border: 3px solid tomato;
+
+    box-shadow: 0 6px 18px rgba(255,99,71,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.profile:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 24px rgba(255,99,71,0.5);
+}
+
+/* Optional Title */
+.navbar h1{
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .navbar{
+        padding: 12px 6%;
+    }
+
+    .logo1{
+        height: 70px ;
+        width: 70px ;
+    }
+
+    .profile{
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .navbar{
+        padding: 10px 5%;
+    }
+
+    .logo1{
+        height: 58px;
+        width: 58px ;
+    }
+
+    .profile{
+        height: 42px;
+        width: 42px ;
+    }
 }

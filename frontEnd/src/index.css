@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
@@ -22,5 +22,120 @@ a{
     }
     100%{
         opacity: 1;
+    }
+} */
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #fff8f5,
+        #fffdfc,
+        #fff4ef
+    );
+    color: #222;
+    overflow-x: hidden;
+}
+
+/* Main App Container */
+.app{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Links */
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: tomato;
+}
+
+/* Buttons */
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Images */
+img{
+    width: 100%;
+    display: block;
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb{
+    background: tomato;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #ff4d2d;
+}
+
+/* Inputs */
+input,
+textarea{
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+/* Selection Color */
+::selection{
+    background: tomato;
+    color: white;
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .app{
+        width: 92%;
+    }
+
+    body{
+        font-size: 14px;
     }
 }
