@@ -32,6 +32,9 @@ import bag_icon from './bag_icon.jpg';
 import logout_icon from './logout_icon.webp';
 import profile_icon from './profile_icon.jpg';
 
+const profile_image = profile_icon;
+const add_icon_white = add_icon_green;
+
 //menu items
 import salad from './salad.webp';
 import maggi from './maggi.jpg';
@@ -77,6 +80,7 @@ export const assets = {
   maggi,
 
   add_icon_green,
+  add_icon_white,
   remove_icon_red,
   play_store2,
   app_store,
@@ -85,6 +89,7 @@ export const assets = {
   logout_icon,
   bag_icon,
   profile_icon,
+  profile_image,
 
 };
 
