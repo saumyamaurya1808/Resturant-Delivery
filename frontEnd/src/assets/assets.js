@@ -5,7 +5,7 @@ import food4 from './food4.jpg';
 import food5 from './food5.webp';
 import food6 from './food6.jpg';
 import logo1 from './logo1.jpg';
-// import food6Webp from './food6.webp'; // Uncomment if you want both versions
+
 import food7 from './food7.webp';
 import food8 from './food8.webp'; // Double-check if this is correct
 import food9 from './food9.jpg';
@@ -21,7 +21,7 @@ import KadaiPaneer from './KadaiPaneer.jpg';
 import ChholaBhatura from './ChholaBhatura.jpg';
 import ChilliPaneer from './ChilliPaneer.webp';
 import ChilliPotato from './ChilliPotato.webp';
-// import add_icon_white from './add_icon_white.webp';
+
 import remove_icon_red from './remove_icon_red.jpg';
 import add_icon_green from './add_icon_green.webp';
 import play_store2 from './play_store2.webp';
@@ -47,7 +47,7 @@ import FrenchFried from './FrenchFried.webp';
 
 // // salad items
 
-// import GreekSalad from './GreekSalad.webp';
+
 
 
 export const assets = {
@@ -57,7 +57,7 @@ export const assets = {
   food4,
   food5,
   food6,
-  // food6Webp,
+  
   food7,
   food8,
   food9,
@@ -75,7 +75,7 @@ export const assets = {
   Noodles,
   SahiPaneer,
   maggi,
-  // add_icon_white,
+
   add_icon_green,
   remove_icon_red,
   play_store2,
