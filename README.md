@@ -1,18 +1,3 @@
-﻿🍽️ My Restaurant Website is a modern, responsive, and user-friendly restaurant website designed to provide customers with an engaging online experience. The website showcases the restaurant's menu, featured dishes, services, and contact information in an attractive and organized layout.
+🍽️ My Restaurant Website is a full-stack MERN application that enables users to explore restaurant menus, place food orders, and enjoy a seamless online dining experience. The platform features secure authentication, responsive design, and efficient order management.
 
-The project focuses on delivering a seamless browsing experience across desktop, tablet, and mobile devices while maintaining a visually appealing design. Customers can explore menu offerings, learn more about the restaurant, and easily find contact details and location information.
-
-✨ Features
-Responsive design for all screen sizes
-Modern and attractive user interface
-Interactive navigation
-Menu showcase section
-Featured dishes display
-About Us section
-Contact and location information
-Fast and optimized performance
-
-🛠️ Tech Stack
-HTML5
-CSS3
-JavaScript
+Tech Stack: MongoDB, Express.js, React.js, Node.js, Redux Toolkit, CSS. 🚀
